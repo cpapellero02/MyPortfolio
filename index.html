@@ -1,0 +1,503 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPortfolio | Tactical Lobby</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Main Lobby -->
+    <main class="lobby">
+
+        <!-- Top Navigation -->
+        <header class="top-bar">
+            <div class="logo">
+                MY<span>PORTFOLIO</span>
+            </div>
+
+            <nav class="top-nav">
+                <a href="#home" class="active" data-nav="home">HOME</a>
+                <a href="#profile" data-nav="profile">PROFILE</a>
+                <a href="#skills" data-nav="skills">SKILLS</a>
+                <a href="#projects" data-nav="projects">PROJECTS</a>
+                <a href="#contact" data-nav="contact">CONTACT</a>
+            </nav>
+
+            <div class="player-status">
+                <span class="status-dot"></span>
+                AVAILABLE
+            </div>
+        </header>
+
+        <!-- Player Profile -->
+        <section class="player-profile" id="profile">
+            <p class="label">OPERATOR PROFILE</p>
+            <h1>JOHN</h1>
+            <p class="role">ASPIRING DEVELOPER</p>
+
+            <div class="profile-info">
+                <p>LOCATION <span>PHILIPPINES</span></p>
+                <p>STATUS <span>ACTIVE</span></p>
+                <p>CLASS <span>DEVELOPER</span></p>
+            </div>
+        </section>
+
+        <!-- Center Lobby Area -->
+        <section class="lobby-center" id="home">
+           <img 
+                src="assets/images/operator.png" 
+                alt="Temporary operator"
+                class="operator-image"
+            >
+        </section>
+
+        <!-- Bottom Navigation -->
+        <footer class="bottom-menu">
+
+            <button class="menu-item loadout-trigger" id="loadout-btn" type="button">
+                <span class="menu-number">01</span>
+                <span class="menu-title">LOADOUT</span>
+                <span class="menu-description">TECHNICAL SKILLS</span>
+            </button>
+
+            <button class="menu-item missions-trigger" id="missions-btn" type="button">
+                <span class="menu-number">02</span>
+                <span class="menu-title">MISSIONS</span>
+                <span class="menu-description">MY PROJECTS</span>
+            </button>
+
+            <button class="menu-item comms-trigger" id="comms-btn" type="button">
+                <span class="menu-number">03</span>
+                <span class="menu-title">COMMUNICATE</span>
+                <span class="menu-description">CONTACT OPERATOR</span>
+            </button>
+
+            <button class="deploy-button" id="deploy-btn" type="button">
+                DEPLOY
+                <span>→</span>
+            </button>
+
+        </footer>
+        <!-- LOADOUT PANEL -->
+        <section class="loadout-panel" id="loadout-panel" aria-hidden="true">
+            <div class="loadout-header">
+                <div>
+                    <p class="label">OPERATOR EQUIPMENT</p>
+                    <h2>TECHNICAL LOADOUT</h2>
+                </div>
+                <button class="loadout-close" id="loadout-close" type="button">
+                    CLOSE [ X ]
+                </button>
+            </div>
+            <div class="loadout-content">
+                 <!-- SKILL 01 -->
+                <div class="equipment-slot">
+                    <div class="slot-number">01 / BACKEND</div>
+
+                    <div class="slot-info">
+                        <h3>C# / ASP.NET CORE</h3>
+                        <p>BACKEND DEVELOPMENT</p>
+                    </div>
+
+                    <div class="skill-level">
+                        <div class="skill-level-info">
+                            <span>PROFICIENCY</span>
+                            <span>INTERMEDIATE</span>
+                        </div>
+
+                        <div class="skill-progress">
+                            <div class="skill-progress-fill" style="width: 65%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SKILL 02 -->
+                <div class="equipment-slot">
+                    <div class="slot-number">02 / FRONTEND</div>
+
+                    <div class="slot-info">
+                        <h3>HTML / CSS / JAVASCRIPT</h3>
+                        <p>FRONTEND DEVELOPMENT</p>
+                    </div>
+
+                    <div class="skill-level">
+                        <div class="skill-level-info">
+                            <span>PROFICIENCY</span>
+                            <span>LEARNING</span>
+                        </div>
+
+                        <div class="skill-progress">
+                            <div class="skill-progress-fill" style="width: 40%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SKILL 03 -->
+                <div class="equipment-slot">
+                    <div class="slot-number">03 / DATABASE</div>
+
+                    <div class="slot-info">
+                        <h3>SQL SERVER / EF CORE</h3>
+                        <p>DATABASE MANAGEMENT</p>
+                    </div>
+
+                    <div class="skill-level">
+                        <div class="skill-level-info">
+                            <span>PROFICIENCY</span>
+                            <span>INTERMEDIATE</span>
+                        </div>
+
+                        <div class="skill-progress">
+                            <div class="skill-progress-fill" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SKILL 04 -->
+                <div class="equipment-slot">
+                    <div class="slot-number">04 / TOOLS</div>
+
+                    <div class="slot-info">
+                        <h3>VISUAL STUDIO / VS CODE / GIT</h3>
+                        <p>DEVELOPMENT TOOLS</p>
+                    </div>
+
+                    <div class="skill-level">
+                        <div class="skill-level-info">
+                            <span>PROFICIENCY</span>
+                            <span>FAMILIAR</span>
+                        </div>
+
+                        <div class="skill-progress">
+                            <div class="skill-progress-fill" style="width: 55%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="loadout-footer">
+                <span>SYSTEM CHECK</span>
+                <span class="system-online">● ALL SYSTEMS ONLINE</span>
+            </div>
+        </section>
+        <!-- MISSIONS PANEL -->
+        <section class="missions-panel" id="missions-panel" aria-hidden="true">
+            <div class="missions-header">
+                <div>
+                    <p class="label">DEPLOYMENT RECORD</p>
+                    <h2>MISSION SELECT</h2>
+                </div>
+                <button class="missions-close" id="missions-close" type="button">
+                    CLOSE [ X ]
+                </button>
+            </div>
+            <div class="missions-content">
+                <!-- MISSION 01 -->
+                <article class="mission-card">
+                    <div class="mission-top">
+                        <span>MISSION 01</span>
+                        <span class="mission-status">IN DEVELOPMENT</span>
+                    </div>
+                    <h3>DinaPOS</h3>
+                    <p class="mission-description">
+                        A web-based point-of-sale system designed for sari-sari store
+                        sales, customer debts, and daily sales monitoring.
+                    </p>
+                    <div class="mission-tech">
+                        <span>ASP.NET CORE</span>
+                        <span>C#</span>
+                        <span>SQL SERVER</span>
+                    </div>
+                    <button class="inspect-button" type="button">
+                        INSPECT MISSION →
+                    </button>
+                </article>
+                <!-- MISSION 02 -->
+                <article class="mission-card">
+                    <div class="mission-top">
+                        <span>MISSION 02</span>
+                        <span class="mission-status">ACADEMIC PROJECT</span>
+                    </div>
+                    <h3>CCSResearchHub</h3>
+                    <p class="mission-description">
+                        An academic research management system for capstone submissions,
+                        advisers, scheduling, panel evaluations, and results.
+                    </p>
+                    <div class="mission-tech">
+                        <span>ASP.NET CORE MVC</span>
+                        <span>EF CORE</span>
+                        <span>SQL SERVER</span>
+                    </div>
+                    <button class="inspect-button" type="button">
+                        INSPECT MISSION →
+                    </button>
+                </article>
+                <!-- MISSION 03 -->
+                <article class="mission-card mission-locked">
+                    <div class="mission-top">
+                        <span>MISSION 03</span>
+                        <span class="mission-status">LOCKED</span>
+                    </div>
+                    <h3>CLASSIFIED</h3>
+                    <p class="mission-description">
+                        The next deployment is currently being prepared.
+                        New project data will be added here.
+                    </p>
+                    <div class="mission-tech">
+                        <span>UNKNOWN</span>
+                        <span>IN PREPARATION</span>
+                    </div>
+                    <button class="inspect-button locked-button" type="button" disabled>
+                        MISSION UNAVAILABLE
+                    </button>
+                </article>
+            </div>
+            <div class="missions-footer">
+                <span>MISSION DATABASE</span>
+                <span>2 PROJECTS REGISTERED</span>
+            </div>
+        </section>
+
+                <!-- MISSION DETAILS PANEL -->
+        <section class="mission-details-panel" id="mission-details-panel" aria-hidden="true">
+
+            <div class="mission-details-header">
+                <div>
+                    <p class="label">MISSION INTELLIGENCE / PROJECT FILE</p>
+                    <h2 id="mission-details-title">PROJECT DETAILS</h2>
+                </div>
+
+                <button class="mission-details-close" id="mission-details-close" type="button">
+                    CLOSE [ X ]
+                </button>
+            </div>
+
+            <div class="mission-details-content">
+
+                <div class="mission-details-identity">
+                    <p class="mission-details-code" id="mission-details-code">MISSION 001</p>
+                    <h3 id="mission-details-name">PROJECT NAME</h3>
+                    <p id="mission-details-description">
+                        Project description will appear here.
+                    </p>
+
+                    <div class="mission-details-status">
+                        <span>DEVELOPMENT STATUS</span>
+                        <strong id="mission-details-status">IN DEVELOPMENT</strong>
+                    </div>
+                </div>
+
+                <div class="mission-details-information">
+
+                    <div class="mission-details-block">
+                        <span>TECHNOLOGY STACK</span>
+                        <div class="mission-details-tech" id="mission-details-tech"></div>
+                    </div>
+
+                    <div class="mission-details-block">
+                        <span>MISSION OBJECTIVES</span>
+                        <ul id="mission-details-objectives"></ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="mission-details-footer">
+                <span>PROJECT INTELLIGENCE DATABASE</span>
+                <span>AUTHORIZED ACCESS</span>
+            </div>
+
+        </section>
+        <!-- COMMS PANEL -->
+        <section class="comms-panel" id="comms-panel" aria-hidden="true">
+            <div class="comms-header">
+                <div>
+                    <p class="label">COMMUNICATION CHANNEL</p>
+                    <h2>ESTABLISH CONNECTION</h2>
+                </div>
+                <button class="comms-close" id="comms-close" type="button">
+                    CLOSE [ X ]
+                </button>
+            </div>
+            <div class="comms-content">
+                <div class="comms-info">
+                    <p class="comms-tag">CHANNEL 01 / OPEN</p>
+                    <h3>LET'S WORK<br>TOGETHER.</h3>
+                    <p>
+                        Have a project in mind, an opportunity, or simply want to connect?
+                        Send a transmission and I'll get back to you.
+                    </p>
+                    <div class="comms-details">
+                        <div>
+                            <span>OPERATOR</span>
+                            <strong>JOHN</strong>
+                        </div>
+                        <div>
+                            <span>LOCATION</span>
+                            <strong>PHILIPPINES</strong>
+                        </div>
+                        <div>
+                            <span>STATUS</span>
+                            <strong class="system-online">AVAILABLE FOR CONTACT</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="comms-links">
+                    <a href="mailto:YOUR_EMAIL_HERE" class="comms-link">
+                        <span class="comms-link-number">01</span>
+                        <span>
+                            <strong>EMAIL</strong>
+                            <small>DIRECT TRANSMISSION</small>
+                        </span>
+                        <span class="comms-arrow">↗</span>
+                    </a>
+                    <a href="https://github.com/YOUR_USERNAME" target="_blank" rel="noopener noreferrer" class="comms-link">
+                        <span class="comms-link-number">02</span>
+                        <span>
+                            <strong>GITHUB</strong>
+                            <small>CODE REPOSITORY</small>
+                        </span>
+                        <span class="comms-arrow">↗</span>
+                    </a>
+                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="comms-link">
+                        <span class="comms-link-number">03</span>
+                        <span>
+                            <strong>LINKEDIN</strong>
+                            <small>PROFESSIONAL NETWORK</small>
+                        </span>
+                        <span class="comms-arrow">↗</span>
+                    </a>
+                </div>
+            </div>
+            <div class="comms-footer">
+                <span>SECURE CHANNEL / COMMS SYSTEM</span>
+                <span>● CONNECTION READY</span>
+            </div>
+        </section>
+        <!-- DEPLOYMENT PANEL -->
+        <section class="deploy-panel" id="deploy-panel" aria-hidden="true">
+
+            <div class="deploy-content">
+
+                <p class="label">DEPLOYMENT AUTHORIZATION</p>
+
+                <div class="deploy-line"></div>
+
+                <h2>WELCOME TO<br>MY PORTFOLIO.</h2>
+
+                <p class="deploy-description">
+                    Every project is a mission. Every line of code is progress.
+                    Explore my development journey, technical skills, and completed work.
+                </p>
+
+                <div class="deploy-information">
+                    <div>
+                        <span>OPERATOR</span>
+                        <strong>JOHN</strong>
+                    </div>
+
+                    <div>
+                        <span>ROLE</span>
+                        <strong>ASPIRING DEVELOPER</strong>
+                    </div>
+
+                    <div>
+                        <span>DEPLOYMENT STATUS</span>
+                        <strong class="system-online">AUTHORIZED</strong>
+                    </div>
+                </div>
+
+                <button class="return-button" id="return-btn" type="button">
+                    RETURN TO LOBBY
+                </button>
+
+            </div>
+
+            <button class="deploy-close" id="deploy-close" type="button">
+                CLOSE [ X ]
+            </button>
+        </section>
+
+        <!-- PROFILE PANEL -->
+        <section class="profile-panel" id="profile-panel" aria-hidden="true">
+
+            <div class="profile-panel-header">
+                <div>
+                    <p class="label">PERSONNEL DATABASE / 001</p>
+                    <h2>OPERATOR PROFILE</h2>
+                </div>
+
+                <button class="profile-panel-close" id="profile-close" type="button">
+                    CLOSE [ X ]
+                </button>
+            </div>
+
+            <div class="profile-panel-content">
+
+                <div class="profile-identity">
+                    <p class="profile-code">IDENTITY VERIFIED</p>
+
+                    <h2>JOHN</h2>
+
+                    <p class="profile-specialization">
+                        ASPIRING SOFTWARE DEVELOPER
+                    </p>
+
+                    <div class="profile-divider"></div>
+
+                    <p class="profile-bio">
+                        An aspiring developer focused on building practical applications,
+                        learning modern technologies, and improving problem-solving skills
+                        through real-world projects.
+                    </p>
+                </div>
+
+                <div class="profile-records">
+
+                    <div class="record-item">
+                        <span class="record-label">01 / EDUCATION</span>
+                        <h3>INFORMATION TECHNOLOGY</h3>
+                        <p>College Student / IT Program</p>
+                    </div>
+
+                    <div class="record-item">
+                        <span class="record-label">02 / DEVELOPMENT FOCUS</span>
+                        <h3>WEB APPLICATIONS</h3>
+                        <p>Backend development, frontend development, and database systems.</p>
+                    </div>
+
+                    <div class="record-item">
+                        <span class="record-label">03 / CURRENT OBJECTIVE</span>
+                        <h3>MISSION: DEVELOPER</h3>
+                        <p>
+                            Building projects, developing technical skills,
+                            and preparing for a career in software development.
+                        </p>
+                    </div>
+
+                    <div class="record-item">
+                        <span class="record-label">04 / OPERATING BASE</span>
+                        <h3>PHILIPPINES</h3>
+                        <p>Available for learning and new opportunities.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="profile-panel-footer">
+                <span>PERSONNEL RECORD / JOHN</span>
+                <span class="system-online">● RECORD VERIFIED</span>
+            </div>
+
+        </section>
+    </main>
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
